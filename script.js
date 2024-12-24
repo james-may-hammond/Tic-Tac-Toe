@@ -1,6 +1,6 @@
 const cells = document.querySelectorAll(".cell");
 const statusText = document.querySelector("#statusText");
-const restartBtn = document.querySelector("#restartBtn");
+const restartButton = document.querySelector("#restartButton");
 const winConditions = [
     [0, 1, 2],
     [3, 4, 5],
@@ -71,7 +71,7 @@ function checkWinner(){
 }
 function restartGame(){
     currentPlayer = "X";
-    let options = ["", "", "", "", "", "", "", "", ""];
+    options = ["", "", "", "", "", "", "", "", ""];
     statusText.textContent = `${currentPlayer}'s Turn`;
     cells.forEach(cell => cell.textContent = "");
     running = true;
